@@ -9,8 +9,13 @@ public abstract class Employee extends User {
         this.nik = nik;
     }
 
-    public String getNik() { return nik; }
-    public void setNik(String nik) { this.nik = nik; }
+    public String getNik() {
+        return nik;
+    }
+
+    public void setNik(String nik) {
+        this.nik = nik;
+    }
 
     public abstract double hitungGaji();
 }

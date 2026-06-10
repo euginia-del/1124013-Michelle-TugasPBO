@@ -12,11 +12,21 @@ public class DosenHonorer extends Employee {
         this.totalSKS = totalSKS;
     }
 
-    public double getHonorPerSKS() { return honorPerSKS; }
-    public void setHonorPerSKS(double honorPerSKS) { this.honorPerSKS = honorPerSKS; }
+    public double getHonorPerSKS() {
+        return honorPerSKS;
+    }
 
-    public int getTotalSKS() { return totalSKS; }
-    public void setTotalSKS(int totalSKS) { this.totalSKS = totalSKS; }
+    public void setHonorPerSKS(double honorPerSKS) {
+        this.honorPerSKS = honorPerSKS;
+    }
+
+    public int getTotalSKS() {
+        return totalSKS;
+    }
+
+    public void setTotalSKS(int totalSKS) {
+        this.totalSKS = totalSKS;
+    }
 
     @Override
     public double hitungGaji() {

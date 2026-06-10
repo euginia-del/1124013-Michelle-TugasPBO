@@ -14,14 +14,29 @@ public class DosenTetap extends Employee {
         this.totalSKS = totalSKS;
     }
 
-    public double getGajiPokok() { return gajiPokok; }
-    public void setGajiPokok(double gajiPokok) { this.gajiPokok = gajiPokok; }
+    public double getGajiPokok() {
+        return gajiPokok;
+    }
 
-    public double getHonorPerSKS() { return honorPerSKS; }
-    public void setHonorPerSKS(double honorPerSKS) { this.honorPerSKS = honorPerSKS; }
+    public void setGajiPokok(double gajiPokok) {
+        this.gajiPokok = gajiPokok;
+    }
 
-    public int getTotalSKS() { return totalSKS; }
-    public void setTotalSKS(int totalSKS) { this.totalSKS = totalSKS; }
+    public double getHonorPerSKS() {
+        return honorPerSKS;
+    }
+
+    public void setHonorPerSKS(double honorPerSKS) {
+        this.honorPerSKS = honorPerSKS;
+    }
+
+    public int getTotalSKS() {
+        return totalSKS;
+    }
+
+    public void setTotalSKS(int totalSKS) {
+        this.totalSKS = totalSKS;
+    }
 
     @Override
     public double hitungGaji() {

@@ -12,9 +12,19 @@ public class Enrollment {
         this.nilai = nilai;
     }
 
-    public Mahasiswa getMahasiswa() { return mahasiswa; }
-    public MataKuliah getMataKuliah() { return mataKuliah; }
+    public Mahasiswa getMahasiswa() {
+        return mahasiswa;
+    }
 
-    public double getNilai() { return nilai; }
-    public void setNilai(double nilai) { this.nilai = nilai; }
+    public MataKuliah getMataKuliah() {
+        return mataKuliah;
+    }
+
+    public double getNilai() {
+        return nilai;
+    }
+
+    public void setNilai(double nilai) {
+        this.nilai = nilai;
+    }
 }

@@ -18,23 +18,42 @@ public class Mahasiswa extends User {
         this.enrollments = new ArrayList<>();
     }
 
-    public String getNim() { return nim; }
-    public void setNim(String nim) { this.nim = nim; }
+    public String getNim() {
+        return nim;
+    }
 
-    public int getTahunMasuk() { return tahunMasuk; }
-    public void setTahunMasuk(int tahunMasuk) { this.tahunMasuk = tahunMasuk; }
+    public void setNim(String nim) {
+        this.nim = nim;
+    }
 
-    public int getTahunKelulusan() { return tahunKelulusan; }
-    public void setTahunKelulusan(int tahunKelulusan) { this.tahunKelulusan = tahunKelulusan; }
+    public int getTahunMasuk() {
+        return tahunMasuk;
+    }
 
-    public ArrayList<Enrollment> getEnrollments() { return enrollments; }
+    public void setTahunMasuk(int tahunMasuk) {
+        this.tahunMasuk = tahunMasuk;
+    }
+
+    public int getTahunKelulusan() {
+        return tahunKelulusan;
+    }
+
+    public void setTahunKelulusan(int tahunKelulusan) {
+        this.tahunKelulusan = tahunKelulusan;
+    }
+
+    public ArrayList<Enrollment> getEnrollments() {
+        return enrollments;
+    }
 
     public void addEnrollment(Enrollment e) {
         enrollments.add(e);
     }
 
     public double hitungIP() {
-        if (enrollments.isEmpty()) return 0;
+        if (enrollments.isEmpty()) {
+            return 0;
+        }
 
         double totalBobot = 0;
         int totalSKS = 0;
@@ -50,13 +69,22 @@ public class Mahasiswa extends User {
     }
 
     private double nilaiKeBobot(double nilai) {
-        if (nilai >= 85) return 4.0;
-        else if (nilai >= 80) return 3.5;
-        else if (nilai >= 75) return 3.0;
-        else if (nilai >= 70) return 2.5;
-        else if (nilai >= 65) return 2.0;
-        else if (nilai >= 60) return 1.5;
-        else if (nilai >= 55) return 1.0;
-        else return 0.0;
+        if (nilai >= 85) {
+            return 4.0; 
+        }else if (nilai >= 80) {
+            return 3.5; 
+        }else if (nilai >= 75) {
+            return 3.0; 
+        }else if (nilai >= 70) {
+            return 2.5; 
+        }else if (nilai >= 65) {
+            return 2.0; 
+        }else if (nilai >= 60) {
+            return 1.5; 
+        }else if (nilai >= 55) {
+            return 1.0; 
+        }else {
+            return 0.0;
+        }
     }
 }

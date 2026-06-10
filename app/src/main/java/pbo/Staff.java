@@ -9,8 +9,13 @@ public class Staff extends Employee {
         this.gajiPokok = gajiPokok;
     }
 
-    public double getGajiPokok() { return gajiPokok; }
-    public void setGajiPokok(double gajiPokok) { this.gajiPokok = gajiPokok; }
+    public double getGajiPokok() {
+        return gajiPokok;
+    }
+
+    public void setGajiPokok(double gajiPokok) {
+        this.gajiPokok = gajiPokok;
+    }
 
     @Override
     public double hitungGaji() {
