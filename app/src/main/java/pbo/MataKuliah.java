@@ -35,13 +35,4 @@ public class MataKuliah {
     public void setStatus(String status) {
         this.status = status;
     }
-
-    @Override
-    public String toString() {
-        return "MataKuliah{"
-                + "kode='" + kode + '\''
-                + ", nama='" + nama + '\''
-                + ", status='" + status + '\''
-                + '}';
-    }
 }

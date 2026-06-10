@@ -1,15 +1,19 @@
 package pbo;
 
+import java.util.ArrayList;
+
 public class Mahasiswa {
 
     private String nim;
     private String nama;
     private String status;
+    private ArrayList<Enrollment> enrollments;
 
     public Mahasiswa(String nim, String nama, String status) {
         this.nim = nim;
         this.nama = nama;
         this.status = status;
+        this.enrollments = new ArrayList<>();
     }
 
     public String getNim() {
@@ -36,12 +40,11 @@ public class Mahasiswa {
         this.status = status;
     }
 
-    @Override
-    public String toString() {
-        return "Mahasiswa{"
-                + "nim='" + nim + '\''
-                + ", nama='" + nama + '\''
-                + ", status='" + status + '\''
-                + '}';
+    public ArrayList<Enrollment> getEnrollments() {
+        return enrollments;
+    }
+
+    public void addEnrollment(Enrollment e) {
+        enrollments.add(e);
     }
 }
