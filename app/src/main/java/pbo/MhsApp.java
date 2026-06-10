@@ -79,14 +79,14 @@ public class MhsApp {
         matkulList.add(bd);
         matkulList.add(ai);
 
-        // Karyawan (Chainsaw Man theme)
+        // Karyawan
         employees.add(new DosenTetap("Kishibe", "kishibe@univ.ac.id", "pass123", "Aktif", "DT001", 5000000, 50000, 12));
         employees.add(new DosenTetap("Quanxi", "quanxi@univ.ac.id", "pass456", "Aktif", "DT002", 6000000, 60000, 15));
         employees.add(new DosenHonorer("Himeno", "himeno@univ.ac.id", "pass789", "Aktif", "DH001", 40000, 6));
         employees.add(new Staff("Makima", "makima@univ.ac.id", "staff123", "Aktif", "STF001", 3000000));
         employees.add(new Staff("Arai", "arai@univ.ac.id", "staff456", "Aktif", "STF002", 2500000));
 
-        // Mahasiswa (Chainsaw Man theme)
+        // Mahasiswa
         Mahasiswa denji = new Mahasiswa("22001", "Denji", "Aktif", "denji@student.ac.id", "pass1", 2022, 2026);
         Mahasiswa power = new Mahasiswa("22002", "Power", "Aktif", "power@student.ac.id", "pass2", 2022, 2026);
         Mahasiswa aki = new Mahasiswa("22003", "Aki Hayakawa", "Aktif", "aki@student.ac.id", "pass3", 2022, 2026);
