@@ -11,7 +11,6 @@ public class Mahasiswa extends User {
     public String kode_jurusan;
     private ArrayList<Enrollment> enrollments;
 
-    // Constructor lengkap - dipakai oleh MahasiswaRepository (dari DB)
     public Mahasiswa(String nim, String nama, String email, String password,
             UserStatus status, UserType type,
             String tanggal_masuk, String tanggal_keluar, String kode_jurusan) {
@@ -21,8 +20,6 @@ public class Mahasiswa extends User {
         this.enrollments = new ArrayList<>();
     }
 
-    // Constructor ringkas - dipakai oleh MhsApp (in-memory / dummy data)
-    // tahunMasuk dan tahunKelulusan dikonversi ke format string tanggal
     public Mahasiswa(String nim, String nama, String statusStr, String email, String password,
             int tahunMasuk, int tahunKelulusan) {
         super(nim, nama, email, password,
@@ -81,13 +78,22 @@ public class Mahasiswa extends User {
     }
 
     private double nilaiKeBobot(double nilai) {
-        if (nilai >= 85) return 4.0;
-        else if (nilai >= 80) return 3.5;
-        else if (nilai >= 75) return 3.0;
-        else if (nilai >= 70) return 2.5;
-        else if (nilai >= 65) return 2.0;
-        else if (nilai >= 60) return 1.5;
-        else if (nilai >= 55) return 1.0;
-        else return 0.0;
+        if (nilai >= 85) {
+            return 4.0; 
+        }else if (nilai >= 80) {
+            return 3.5; 
+        }else if (nilai >= 75) {
+            return 3.0; 
+        }else if (nilai >= 70) {
+            return 2.5; 
+        }else if (nilai >= 65) {
+            return 2.0; 
+        }else if (nilai >= 60) {
+            return 1.5; 
+        }else if (nilai >= 55) {
+            return 1.0; 
+        }else {
+            return 0.0;
+        }
     }
 }
